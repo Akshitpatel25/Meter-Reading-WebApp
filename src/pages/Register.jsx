@@ -27,6 +27,7 @@ function Register() {
       setname("")
       setEmail("")
       setpassword("")
+      window.location.reload()
     } catch (error) {
       setisloading(true)
       isseterr(true)
@@ -35,7 +36,6 @@ function Register() {
       // alert("error " + error)
     }
 
-    window.location.reload()
     
   }
 

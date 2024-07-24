@@ -35,6 +35,7 @@ function Login() {
       isseterr(false)
       setEmail("")
       setpassword("") 
+      window.location.reload()
     } catch (error) {
       setisloading(true)
       isseterr(true)
@@ -42,7 +43,6 @@ function Login() {
       // seterr("login" + (error.message))
       // alert("error " + error)
     }
-    window.location.reload()
     
   }
 
