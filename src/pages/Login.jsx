@@ -31,7 +31,8 @@ function Login() {
     } catch (error) {
       setisloading(true)
       isseterr(true)
-      seterr((error.message).slice(0,18))
+      // seterr((error.message).slice(0,18))
+      seterr("login" + (error.message))
       // alert("error " + error)
     }
     
