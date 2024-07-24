@@ -38,10 +38,11 @@ function Login() {
     } catch (error) {
       setisloading(true)
       isseterr(true)
-      // seterr((error.message).slice(0,18))
-      seterr("login" + (error.message))
+      seterr((error.message).slice(0,18))
+      // seterr("login" + (error.message))
       // alert("error " + error)
     }
+    window.location.reload()
     
   }
 

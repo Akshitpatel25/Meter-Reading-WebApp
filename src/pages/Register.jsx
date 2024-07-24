@@ -31,9 +31,11 @@ function Register() {
       setisloading(true)
       isseterr(true)
       seterr(error.message)
-      seterr("register" + error.message)
+      // seterr("register" + error.message)
       // alert("error " + error)
     }
+
+    window.location.reload()
     
   }
 
