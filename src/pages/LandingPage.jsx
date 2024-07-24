@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../public/meter-reading-management-1.png'
+import { useUser } from "../appwrite/users";
+
 function LandingPage() {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
+
   return (
     <div className='w-screen h-screen bg-black text-white'>
       <div className='w-full h-1/6 bg-yellow-500 flex '>

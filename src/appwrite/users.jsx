@@ -14,7 +14,7 @@ export function UserProvider(props) {
   async function login(email, password) {
     const loggedIn = await account.createEmailPasswordSession(email, password);
     setUser(loggedIn);
-    window.location.replace("/home"); // you can use different redirect method for your application
+    window.open("/home", "_blank");
   }
 
   async function logout() {

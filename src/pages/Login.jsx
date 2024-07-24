@@ -5,6 +5,8 @@ import { useUser } from '../appwrite/users';
 import ZKZgGIF from '../../public/ZWdx.gif'
 import logo from "../../public/meter-reading-management-1.png"
 import '../index.css'
+
+
 function Login() {
   const [email, setEmail] = useState("")
   const [password, setpassword] = useState("")
@@ -15,6 +17,11 @@ function Login() {
   const navigate = useNavigate();
   const user = useUser()
 
+  useEffect(() => {
+    if (user.current) {
+      navigate('/home')
+    }
+  }, []);
   
 
   const handle_login = async(e) => {
