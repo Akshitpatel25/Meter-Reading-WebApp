@@ -184,7 +184,7 @@ function SingleData({ setisSelected, selectedData, setselectedData }) {
           className="bg-black rounded-md p-1 pl-2 pr-2"
           onClick={() => setisSelected((prev) => !prev)}
         >
-          ⮜ Back
+          {"\u2B9C"} Back
         </button>
       </div>
 
