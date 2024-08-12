@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { IdeaProvider } from "./appwrite/Notes";
 import LandingPage from "./pages/LandingPage";
+import SingleData from "./components/SingleData";
 
 function App() {
   return (
