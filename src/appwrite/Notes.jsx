@@ -21,7 +21,7 @@ export function IdeaProvider(props) {
       ID.unique(),
       idea
     );
-    setIdeas((ideas) => [response, ...ideas].slice(0, 20));
+    setIdeas((ideas) => [response, ...ideas].slice(0, 20)); //this is limit for data
   }
 
   async function remove(id) {
