@@ -21,7 +21,7 @@ export function IdeaProvider(props) {
       ID.unique(),
       idea
     );
-    setIdeas((ideas) => [response, ...ideas].slice(0, 20)); //this is limit for data
+    setIdeas((ideas) => [response, ...ideas]/*slice(0, 20)*/); //this is limit for data
   }
 
   async function remove(id) {
@@ -46,7 +46,7 @@ export function IdeaProvider(props) {
     const response = await databases.listDocuments(
       IDEAS_DATABASE_ID,
       IDEAS_COLLECTION_ID,
-      [Query.orderDesc("$createdAt"), Query.limit(10)]
+      [Query.orderDesc("$createdAt")/*, Query.limit(10)*/]
     );
     setIdeas(response.documents);
   }
