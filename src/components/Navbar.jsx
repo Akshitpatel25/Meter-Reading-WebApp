@@ -33,7 +33,7 @@ function Navbar() {
       <div className="w-full h-5/6 bg-yellow-500 flex justify-between items-center ">
         <div className="w-1/2 h-full flex items-center">
 
-          <Link to={"/"} className="w-1/2 h-full flex items-center outline-none">
+          <Link className="w-1/2 h-full flex items-center outline-none">
             <img className="w-19 h-full" src={logo} alt="" />
             <h1 className="text-2xl font-bold text-slate-800  max-450:text-md ">
               Meter Reading
