@@ -10,7 +10,7 @@ function LandingPage() {
     <div className='w-screen h-screen bg-black text-white'>
       <div className='w-full h-1/6 bg-yellow-500 flex '>
         
-      <Link to={"/"} className="w-1/2 h-full flex items-center outline-none">
+      <Link className="w-1/2 h-full flex items-center outline-none">
             <img className="w-19 h-full" src={logo} alt="" />
             <h1 className="text-3xl font-bold text-slate-800  max-450:text-md ">
               Meter Reading
