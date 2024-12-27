@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
 import { useUser } from '../appwrite/users';
 import ZKZgGIF from '../../public/ZWdx.gif'
@@ -14,6 +14,12 @@ function Register() {
 
   const navigate = useNavigate()
   const user = useUser()
+
+  useEffect(() => {
+      if (user.current) {
+        navigate('/home')
+      }
+    });
 
   const handle_register = async (e) => {
     e.preventDefault()

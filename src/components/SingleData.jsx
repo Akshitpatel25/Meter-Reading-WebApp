@@ -170,7 +170,7 @@ function SingleData({ setisSelected, selectedData, setselectedData }) {
       navigate("/");
     }
     setbill(selectedData[0].ElecBill)
-    console.log(selectedData[0]);
+    // console.log(selectedData[0]);
   }, [user, navigate, billForm]);
 
   if (!selectedData) {
@@ -184,7 +184,7 @@ function SingleData({ setisSelected, selectedData, setselectedData }) {
           className="bg-black rounded-md p-1 pl-2 pr-2"
           onClick={() => setisSelected((prev) => !prev)}
         >
-          {"\u2B9C"} Back
+          {"🡸"} Back
         </button>
       </div>
 

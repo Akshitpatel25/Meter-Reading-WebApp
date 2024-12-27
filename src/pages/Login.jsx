@@ -21,7 +21,7 @@ function Login() {
     if (user.current) {
       navigate('/home')
     }
-  }, []);
+  });
   
 
   const handle_login = async(e) => {

@@ -16,20 +16,11 @@ function Home() {
   const [showform, setshowform] = useState(false);
 
   useEffect(() => {
-    console.log(user); // Add this line
-    if (!user) {
+    // console.log(user); // Add this line
+    if (!user.current) {
       navigate("/login");
     }
-
-    // const userlogin = localStorage.getItem("cookieFallback");
-    // console.log(userlogin);
-
-    // if (userlogin === null || userlogin === "") {
-    //   console.log("user nahe hai");
-    // } else {
-    //   console.log("user hai");
-    // }
-  }, []);
+  },[user]);
 
   const handle_Form = () => {
     setshowform(!showform);

@@ -42,12 +42,12 @@ function Datalist() {
 
   // this is for check 
   if (onlydata.length === 0) {
-    return <p className="text-xl">No Data Available. Create New Data</p>;
+    return <div className="flex justify-center items-center"><img src="/public/ZKZg.gif" alt="" className="w-10 h-10" /></div>;
   }
 
   //this is for each data
   const handle_click = (id) => {
-    console.log(id);
+    // console.log(id);
     setisSelected((prev)=> !prev)
     const data = ideas.current.filter((prev) => prev.$id == id)
     setselectedData(data);
